@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dropdown">
+        <button>Pilih Nilai</button>
+        <div class="dropdown-content">
+            <input type="range" min="0" max="100" value="0" id="slider">
+            <div class="slider-value" id="sliderValue"></div>
+        </div>
+    </div>
+
+    <script>
+        // Ambil elemen slider dan nilai output
+        const slider = document.getElementById("slider");
+        const sliderValue = document.getElementById("sliderValue");
+
+        // Update nilai saat slider digeser
+        slider.addEventListener("input", function() {
+            sliderValue.textContent = slider.value;
+        });
+    </script>
+
+</body>
+</html>
