@@ -1,0 +1,16 @@
+.tooltip {
+    position: absolute;
+    transform: translate(-50%, -40px);
+    background: rgba(36, 36, 36, 0.8);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+.tooltip.show {
+    opacity: 1;
+}
